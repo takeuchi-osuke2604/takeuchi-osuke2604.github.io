@@ -1,0 +1,119 @@
+/* デザインの共通設定 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f7f8;
+}
+
+/* ヘッダーデザイン */
+.hero {
+  background: linear-gradient(135deg, #005c97, #363795);
+  color: #ffffff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.hero .tagline {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* メインコンテンツのレイアウト */
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+section {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: #005c97;
+  border-bottom: 2px solid #005c97;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+/* 開催情報の表風レイアウト */
+.info-list {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  row-gap: 15px;
+  column-gap: 10px;
+}
+
+.info-list dt {
+  font-weight: bold;
+  color: #555;
+  background-color: #eef4f8;
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.info-list dd {
+  padding: 8px 0;
+}
+
+/* 地図リンクのスタイリング */
+.map-link {
+  display: inline-block;
+  margin-top: 5px;
+  color: #005c97;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.map-link:hover {
+  text-decoration: underline;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+/* スマホ表示向けの調整（画面幅600px以下） */
+@media (max-width: 600px) {
+  .info-list {
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+  }
+  
+  .info-list dt {
+    margin-top: 10px;
+  }
+  
+  .info-list dd {
+    padding-left: 5px;
+  }
+}
+
+/* ヘッダー画像のスタイル追加 */
+.hero-img {
+  width: 120px;         /* 画像の横幅（お好みで調整してください） */
+  height: auto;        /* 縦横比を維持 */
+  margin-bottom: 15px; /* タイトルとの間の余白 */
+}
